@@ -1,48 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
 body {
-  font-family: sans-serif;
-  margin: 20px;
+    font-family: Arial, sans-serif;
+    background-image: url('https://www.familyeducation.com/sites/default/files/2017-05/read-1386803.jpg');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-#task-container {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.container {
+
+    background-image: url("https://practicetestgeeks.com/wp-content/uploads/2021/11/6263-scaled.jpg");
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
 }
 
-.task {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
+h1 {
+
+    text-align: center;
+    color: #333;
 }
 
-.task input[type="checkbox"] {
-  margin-right: 10px;
+input {
+    padding: 8px;
+    width: 70%;
 }
 
-.task.completed {
-  text-decoration: line-through;
-  color: #aaa;
+button {
+    padding: 8px;
+    cursor: pointer;
 }
 
-#add-task-form {
-  display: flex;
-  margin-top: 20px;
+ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-#add-task-form input {
-  flex-grow: 1;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+li {
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#add-task-btn {
-  padding: 10px 20px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.delete-button {
+    background-color: #ff7b7b;
+    color: #fff;
+    border: none;
+    padding: 6px;
+    cursor: pointer;
+    border-radius: 4px;
 }
